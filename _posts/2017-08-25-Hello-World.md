@@ -2,7 +2,9 @@
 layout: post
 title:  "Hello World!"
 date:   2017-08-25 13:15:16 +0200
-categories: jekyll update
+tags:
+  - bootcamp
+  - courses
 excerpt_separator:  <!--more-->
 ---
 In the following posts I will try to [document](https://www.youtube.com/watch?v=RVKofRN1dyI) my journey to becoming a developer. The main objective will be to give me a reference to what I learned and create an overview of the complete learning process.
