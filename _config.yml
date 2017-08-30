@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Miguel Tavares
 tagline:          'developer journal'
 description:      'developer journal'
-url:              https://fongandrew.github.io/hydeout
+url:              http://migueltavar.es
 baseurl:          # the optional subpath of your site, e.g. "/blog"
 
 author:
