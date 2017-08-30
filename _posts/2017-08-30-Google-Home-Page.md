@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Google Home Page"
-date:   2017-08-30 13:15:16 +0200
+date:   2017-08-30 12:15:16 +0200
 tags:
   - odin project
   - courses
