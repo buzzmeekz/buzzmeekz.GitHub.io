@@ -11,7 +11,7 @@
 
   <title>
     
-      Google Home Page &middot; Miguel Tavares
+      Edge Case: Nested and Mixed Lists &middot; Miguel Tavares
     
   </title>
 
@@ -212,25 +212,102 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Google Home Page</h1>
+  <h1 class="post-title">Edge Case: Nested and Mixed Lists</h1>
 </header>
 <div class="content">
   <div class="post-meta">
-  <span class="post-date">30 Aug 2017</span>
+  <span class="post-date">15 May 2009</span>
   <span class="post-categories">
+    
+      &bull;
+
+      
+      
+      
+
+      
+        Edge Case
+      
     
   </span>
 </div>
 
   <div class="post-body">
-    <p>As part of the <a href="https://www.theodinproject.com/courses/web-development-101/lessons/html-css">Odin Project</a> curriculum I had to replicate the Google home page using html and css. You can see the result <a href="http://migueltavar.es/google-homepage/">here</a>.</p>
+    <p>Nested and mixed lists are an interesting beast. It’s a corner case to make sure that lists within lists do not break the ordered list numbering order and list styles go deep enough.</p>
 
-<p>The most difficult part was figuring out how to add the top and bottom navigation bars. There are many different ways to do this, for example using the html5 <code class="highlighter-rouge">&lt;nav&gt;</code> tag. I just used a regular unordered list <code class="highlighter-rouge">&lt;ul&gt;</code> with <code class="highlighter-rouge">&lt;li&gt;</code> items. Then I removed all the styling in css.</p>
+<h2 id="ordered--unordered--ordered">Ordered – Unordered – Ordered</h2>
 
-<p>This video was really helpful:</p>
+<ol>
+  <li>ordered item</li>
+  <li>ordered item
+    <ul>
+      <li><strong>unordered</strong></li>
+      <li><strong>unordered</strong></li>
+    </ul>
+    <ol>
+      <li>ordered item</li>
+      <li>ordered item</li>
+    </ol>
+  </li>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_ovlvYH782c?rel=0" frameborder="0" allowfullscreen=""></iframe>
+<h2 id="ordered--unordered--unordered">Ordered – Unordered – Unordered</h2>
 
+<ol>
+  <li>ordered item</li>
+  <li>ordered item
+    <ul>
+      <li><strong>unordered</strong></li>
+      <li><strong>unordered</strong></li>
+    </ul>
+    <ul>
+      <li>unordered item</li>
+      <li>unordered item</li>
+    </ul>
+  </li>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
+
+<h2 id="unordered--ordered--unordered">Unordered – Ordered – Unordered</h2>
+
+<ul>
+  <li>unordered item</li>
+  <li>unordered item
+    <ol>
+      <li>ordered</li>
+      <li>ordered
+        <ul>
+          <li>unordered item</li>
+          <li>unordered item</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>unordered item</li>
+  <li>unordered item</li>
+</ul>
+
+<h2 id="unordered--unordered--ordered">Unordered – Unordered – Ordered</h2>
+
+<ul>
+  <li>unordered item</li>
+  <li>unordered item
+    <ul>
+      <li>unordered</li>
+      <li>unordered
+        <ol>
+          <li><strong>ordered item</strong></li>
+          <li><strong>ordered item</strong></li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>unordered item</li>
+  <li>unordered item</li>
+</ul>
 
     
 
@@ -239,25 +316,58 @@
 <div class="post-tags">
   
     
-    <a href="/tags.html#odin-project">
+    <a href="/tags.html#content">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">odin project</span>
+      </span>&nbsp;<span class="tag-name">content</span>
     </a>
   
     
-    <a href="/tags.html#courses">
+    <a href="/tags.html#css">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">courses</span>
+      </span>&nbsp;<span class="tag-name">css</span>
+    </a>
+  
+    
+    <a href="/tags.html#edge-case">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">edge case</span>
+    </a>
+  
+    
+    <a href="/tags.html#lists">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">lists</span>
+    </a>
+  
+    
+    <a href="/tags.html#markup">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">markup</span>
     </a>
   
 </div>
@@ -286,18 +396,18 @@
     
       <li>
         <h3>
-          <a href="/2017/08/25/Document.html">
-            Document
-            <small>25 Aug 2017</small>
+          <a href="/2017/08/30/Google-Home-Page.html">
+            Google Home Page
+            <small>30 Aug 2017</small>
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/edge%20case/2009/05/15/edge-case-nested-and-mixed-lists.html">
-            Edge Case: Nested and Mixed Lists
-            <small>15 May 2009</small>
+          <a href="/2017/08/25/Document.html">
+            Document
+            <small>25 Aug 2017</small>
           </a>
         </h3>
       </li>
