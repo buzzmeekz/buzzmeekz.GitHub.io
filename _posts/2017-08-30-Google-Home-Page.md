@@ -5,6 +5,9 @@ date:   2017-08-30 08:15:16 +0200
 tags:
   - odin project
   - courses
+  - html
+  - css
+  - video
 excerpt_separator:  <!--more-->
 ---
 As part of the [Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/html-css) curriculum I had to replicate the Google home page using html and css. You can see the result [here](http://migueltavar.es/google-homepage/).
