@@ -537,8 +537,7 @@ body {
   .container > header h1, .container > header h2 {
     color: white; }
     .container > header h1:last-child, .container > header h2:last-child {
-      margin-bottom: 0;
-      font-size: 0.7rem; }
+      margin-bottom: 0; }
 
 /* -----------------------------------------------------------
   Mobile view for home page)
@@ -554,8 +553,7 @@ body {
   .home #sidebar header ~ nav {
     display: flex; }
   .home #sidebar > *:last-child {
-    margin-bottom: 0.5rem;
-    font-size: 0.7rem; }
+    margin-bottom: 0.5rem; }
 
 /* -----------------------------------------------------------
   Tablet / Desktop view
@@ -574,8 +572,7 @@ body {
     width: 18rem;
     text-align: left; }
     #sidebar > *:last-child, .home #sidebar > *:last-child {
-      margin-bottom: 0;
-      font-size: 0.7rem; }
+      margin-bottom: 0; }
 
   #sidebar .site-title {
     font-size: 2rem; }
