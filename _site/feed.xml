@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://migueltavar.es/feed.xml" rel="self" type="application/atom+xml" /><link href="http://migueltavar.es/" rel="alternate" type="text/html" /><updated>2017-08-31T17:21:33-03:00</updated><id>http://migueltavar.es/</id><title type="html">Miguel Tavares</title><subtitle>developer journal</subtitle><author><name>Miguel Tavares</name></author><entry><title type="html">Jekyll</title><link href="http://migueltavar.es/2017/08/31/Jekyll.html" rel="alternate" type="text/html" title="Jekyll" /><published>2017-08-31T00:00:00-03:00</published><updated>2017-08-31T00:00:00-03:00</updated><id>http://migueltavar.es/2017/08/31/Jekyll</id><content type="html" xml:base="http://migueltavar.es/2017/08/31/Jekyll.html">&lt;p&gt;Ok, I have to admit it took me some time to set up this site using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. The installation was actually pretty straightforward. But then you’re stuck with a generic blog template and have no idea how to customize it.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://migueltavar.es/feed.xml" rel="self" type="application/atom+xml" /><link href="http://migueltavar.es/" rel="alternate" type="text/html" /><updated>2017-09-01T13:37:45-03:00</updated><id>http://migueltavar.es/</id><title type="html">Miguel Tavares</title><subtitle>developer journal</subtitle><author><name>Miguel Tavares</name></author><entry><title type="html">Bootstrap Grid System</title><link href="http://migueltavar.es/2017/09/01/Bootstrap-Grid-System.html" rel="alternate" type="text/html" title="Bootstrap Grid System" /><published>2017-09-01T00:00:00-03:00</published><updated>2017-09-01T00:00:00-03:00</updated><id>http://migueltavar.es/2017/09/01/Bootstrap-Grid-System</id><content type="html" xml:base="http://migueltavar.es/2017/09/01/Bootstrap-Grid-System.html">&lt;p&gt;Make a site responsive using the Bootstrap &lt;a href=&quot;https://getbootstrap.com/docs/3.3/css/#grid&quot;&gt;grid system&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make a &lt;strong&gt;container&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div class=&quot;container&quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add a &lt;strong&gt;row&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div class=&quot;row&quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Define the column space for each box. There are &lt;strong&gt;12 columns&lt;/strong&gt; in each row.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This means you can make a row with 4 boxes like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;div class=&quot;row&quot;&amp;gt;
+        &amp;lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&amp;gt;
+            &amp;lt;div class=&quot;card&quot;&amp;gt;
+                &amp;lt;h3&amp;gt;Box 1&amp;lt;/h3&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&amp;gt;
+            &amp;lt;div class=&quot;card&quot;&amp;gt;
+                &amp;lt;h3&amp;gt;Box 2&amp;lt;/h3&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&amp;gt;
+            &amp;lt;div class=&quot;card&quot;&amp;gt;
+                &amp;lt;h3&amp;gt;Box 3&amp;lt;/h3&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&amp;gt;
+            &amp;lt;div class=&quot;card&quot;&amp;gt;
+                &amp;lt;h3&amp;gt;Box 4&amp;lt;/h3&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The classes to set the column width are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;col-sm-12&lt;/strong&gt;: on an extra small screen device (phone) the column width will be equal to the row width, i.e. all boxes will be below one another in a single column.
+&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274678701_Screenshot+2017-09-01+11.03.50.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;col-sm-6&lt;/strong&gt;: on a small device (tablet) the column width will be 6, so there are 2 columns with 2 boxes each.
+&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274703571_Screenshot+2017-09-01+11.04.02.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;col-md-3&lt;/strong&gt;: on a medium device (laptop or desktop) the width will be 3, showing the boxes on a single row.
+&lt;img src=&quot;https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274718642_Screenshot+2017-09-01+11.04.10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can test this here: &lt;a href=&quot;https://codepen.io/buzzmeekz/full/mMvqey/&quot;&gt;https://codepen.io/buzzmeekz/full/mMvqey/&lt;/a&gt;&lt;/p&gt;</content><author><name>Miguel Tavares</name></author><category term="bootstrap" /><category term="html" /><category term="css" /><summary type="html">Make a site responsive using the Bootstrap grid system: Make a container: &amp;lt;div class=&quot;container&quot;&amp;gt;&amp;lt;/div&amp;gt;. Add a row: &amp;lt;div class=&quot;row&quot;&amp;gt;&amp;lt;/div&amp;gt;. Define the column space for each box. There are 12 columns in each row. This means you can make a row with 4 boxes like this: &amp;lt;div class=&quot;container&quot;&amp;gt; &amp;lt;div class=&quot;row&quot;&amp;gt; &amp;lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&amp;gt; &amp;lt;div class=&quot;card&quot;&amp;gt; &amp;lt;h3&amp;gt;Box 1&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&amp;gt; &amp;lt;div class=&quot;card&quot;&amp;gt; &amp;lt;h3&amp;gt;Box 2&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&amp;gt; &amp;lt;div class=&quot;card&quot;&amp;gt; &amp;lt;h3&amp;gt;Box 3&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&amp;gt; &amp;lt;div class=&quot;card&quot;&amp;gt; &amp;lt;h3&amp;gt;Box 4&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; The classes to set the column width are: col-sm-12: on an extra small screen device (phone) the column width will be equal to the row width, i.e. all boxes will be below one another in a single column. col-sm-6: on a small device (tablet) the column width will be 6, so there are 2 columns with 2 boxes each. col-md-3: on a medium device (laptop or desktop) the width will be 3, showing the boxes on a single row. You can test this here: https://codepen.io/buzzmeekz/full/mMvqey/</summary></entry><entry><title type="html">Jekyll</title><link href="http://migueltavar.es/2017/08/31/Jekyll.html" rel="alternate" type="text/html" title="Jekyll" /><published>2017-08-31T00:00:00-03:00</published><updated>2017-08-31T00:00:00-03:00</updated><id>http://migueltavar.es/2017/08/31/Jekyll</id><content type="html" xml:base="http://migueltavar.es/2017/08/31/Jekyll.html">&lt;p&gt;Ok, I have to admit it took me some time to set up this site using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. The installation was actually pretty straightforward. But then you’re stuck with a generic blog template and have no idea how to customize it.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Installing a new theme&lt;/strong&gt;&lt;/p&gt;
 

@@ -214,6 +214,94 @@
   
   <article class="post-body">
     <h2 class="post-title">
+      <a href="/2017/09/01/Bootstrap-Grid-System.html">
+        Bootstrap Grid System
+      </a>
+    </h2>
+    <div class="post-meta">
+  <span class="post-date">01 Sep 2017</span>
+  <span class="post-categories">
+    
+  </span>
+</div>
+
+    
+      <p>Make a site responsive using the Bootstrap <a href="https://getbootstrap.com/docs/3.3/css/#grid">grid system</a>:</p>
+
+<ol>
+  <li>
+    <p>Make a <strong>container</strong>: <code class="highlighter-rouge">&lt;div class="container"&gt;&lt;/div&gt;</code>.</p>
+  </li>
+  <li>
+    <p>Add a <strong>row</strong>: <code class="highlighter-rouge">&lt;div class="row"&gt;&lt;/div&gt;</code>.</p>
+  </li>
+  <li>
+    <p>Define the column space for each box. There are <strong>12 columns</strong> in each row.</p>
+  </li>
+</ol>
+
+<p>This means you can make a row with 4 boxes like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
+            &lt;div class="card"&gt;
+                &lt;h3&gt;Box 1&lt;/h3&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
+            &lt;div class="card"&gt;
+                &lt;h3&gt;Box 2&lt;/h3&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
+            &lt;div class="card"&gt;
+                &lt;h3&gt;Box 3&lt;/h3&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
+            &lt;div class="card"&gt;
+                &lt;h3&gt;Box 4&lt;/h3&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<p>The classes to set the column width are:</p>
+
+<ul>
+  <li>
+    <p><strong>col-sm-12</strong>: on an extra small screen device (phone) the column width will be equal to the row width, i.e. all boxes will be below one another in a single column.
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274678701_Screenshot+2017-09-01+11.03.50.png" alt="" /></p>
+  </li>
+  <li>
+    <p><strong>col-sm-6</strong>: on a small device (tablet) the column width will be 6, so there are 2 columns with 2 boxes each.
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274703571_Screenshot+2017-09-01+11.04.02.png" alt="" /></p>
+  </li>
+  <li>
+    <p><strong>col-md-3</strong>: on a medium device (laptop or desktop) the width will be 3, showing the boxes on a single row.
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274718642_Screenshot+2017-09-01+11.04.10.png" alt="" /></p>
+  </li>
+</ul>
+
+<p>You can test this here: <a href="https://codepen.io/buzzmeekz/full/mMvqey/">https://codepen.io/buzzmeekz/full/mMvqey/</a></p>
+
+
+    
+
+    
+      
+      
+      
+
+      
+    
+  </article>
+  
+  <article class="post-body">
+    <h2 class="post-title">
       <a href="/2017/08/31/Jekyll.html">
         Jekyll
       </a>
