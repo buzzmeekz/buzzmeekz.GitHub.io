@@ -49,7 +49,7 @@ Make a site responsive using the Bootstrap [grid system](https://getbootstrap.co
 The classes to set the column width are:
 
 
-- **col-sm-12**: on an extra small screen device (phone) the column width will be equal to the row width, i.e. all boxes will be below one another in a single column.
+- **col-xs-12**: on an extra small screen device (phone) the column width will be equal to the row width, i.e. all boxes will be below one another in a single column.
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274678701_Screenshot+2017-09-01+11.03.50.png)
 
 - **col-sm-6**: on a small device (tablet) the column width will be 6, so there are 2 columns with 2 boxes each.
