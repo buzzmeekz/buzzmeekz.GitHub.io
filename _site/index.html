@@ -214,6 +214,105 @@
   
   <article class="post-body">
     <h2 class="post-title">
+      <a href="/2017/09/04/Flexbox.html">
+        Flexbox
+      </a>
+    </h2>
+    <div class="post-meta">
+  <span class="post-date">04 Sep 2017</span>
+  <span class="post-categories">
+    
+  </span>
+</div>
+
+    
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Flexbox</a> is a great way to make a site responsive. The size, spacing and positioning of the boxes can be adjusted according to the screen size.</p>
+
+<p>This is <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">tutorial</a> by CSS-Tricks gives a good overview of how to implement this CSS class and its attributes.</p>
+
+<p>Adding the property <code class="highlighter-rouge">display: flex</code> to the parent element makes it a flex container. All underlying children are automatically flex items.</p>
+
+<h2 id="properties-of-the-flex-container">Properties of the flex container</h2>
+<ul>
+  <li><strong>flex-direction</strong>
+    <ul>
+      <li><code class="highlighter-rouge">row</code> (default): left to right.</li>
+      <li><code class="highlighter-rouge">row-reverse</code>: right to left.</li>
+      <li><code class="highlighter-rouge">column</code>: top to bottom.</li>
+      <li><code class="highlighter-rouge">column-reverse</code>: bottom to top.</li>
+    </ul>
+  </li>
+  <li><strong>flex-wrap</strong>
+    <ul>
+      <li><code class="highlighter-rouge">wrap</code></li>
+      <li><code class="highlighter-rouge">wrap-reverse</code></li>
+      <li><code class="highlighter-rouge">nowrap</code> (default)</li>
+    </ul>
+  </li>
+  <li><strong>flex-flow</strong>: combines both the flex-direction and flex-wrap in a single property.</li>
+  <li><strong>justify-content</strong>: horizontal alignment of the elements.
+    <ul>
+      <li><code class="highlighter-rouge">flex-start</code>: to the left.</li>
+      <li><code class="highlighter-rouge">flex-end</code>: to the right.</li>
+      <li><code class="highlighter-rouge">center</code>: in the center.</li>
+      <li><code class="highlighter-rouge">space-between</code>: evenly distributed with first element at the start and last element at the end.</li>
+      <li><code class="highlighter-rouge">space-around</code>: evenly distributed with equal space around them.</li>
+      <li><code class="highlighter-rouge">space-evenly</code>: spacing between any two elements (and the space to the edges) is equal.</li>
+    </ul>
+  </li>
+  <li><strong>align-items</strong>: vertical alignment of the elements.
+    <ul>
+      <li><code class="highlighter-rouge">flex-start</code>: at the top.</li>
+      <li><code class="highlighter-rouge">flex-end</code>: at the bottom.</li>
+      <li><code class="highlighter-rouge">center</code>: centered.</li>
+      <li><code class="highlighter-rouge">baseline</code>: baseline of the elements are aligned.</li>
+      <li><code class="highlighter-rouge">stretch</code>: stretch vertically to fill the container.</li>
+    </ul>
+  </li>
+  <li><strong>align-content</strong>: vertical alignment when there are multiple rows.
+    <ul>
+      <li><code class="highlighter-rouge">flex-start</code>: to the start of the container.</li>
+      <li><code class="highlighter-rouge">flex-end</code>: to the end of the container.</li>
+      <li><code class="highlighter-rouge">center</code>: to the center of the container.</li>
+      <li><code class="highlighter-rouge">space-between</code>: evenly distributed.</li>
+      <li><code class="highlighter-rouge">space-around</code>: evenly distributed with equal space around each line.</li>
+      <li><code class="highlighter-rouge">stretch</code> (default): stretch to take up the remaining space.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="properties-of-the-flex-item">Properties of the flex item</h2>
+<ul>
+  <li><strong>order</strong>: change the order of the items.</li>
+  <li><strong>flex-grow</strong>: allows item to grow by setting a relative number.</li>
+  <li><strong>flex-shrink</strong>: allows item to shrink.</li>
+  <li><strong>flex-basis</strong>: default size of an item before the remaining space is distributed. Can be set in percentage, rem, etc. If it is set to <code class="highlighter-rouge">auto</code> it looks at the width and height property of the item.</li>
+  <li><strong>flex</strong>: combines <code class="highlighter-rouge">flex-grow</code>, <code class="highlighter-rouge">flex-shrink</code> and <code class="highlighter-rouge">flex-basis</code>. Default is <code class="highlighter-rouge">0 1 auto</code>.</li>
+  <li><strong>align-self</strong>: vertically align an individual item.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+<p>Following the CSS-Tricks tutorial I created some examples using the flexbox class.</p>
+
+<p data-height="265" data-theme-id="0" data-slug-hash="jLJdjq" data-default-tab="css,result" data-user="buzzmeekz" data-embed-version="2" data-pen-title="Flexbox Examples" class="codepen">See the Pen <a href="https://codepen.io/buzzmeekz/pen/jLJdjq/">Flexbox Examples</a> by Miguel Tavares (<a href="https://codepen.io/buzzmeekz">@buzzmeekz</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Also check out this cool <a href="http://flexboxfroggy.com/">game</a> where you have to move frogs around a screen to help you learn the flexbox basics.</p>
+
+
+    
+
+    
+      
+      
+      
+
+      
+    
+  </article>
+  
+  <article class="post-body">
+    <h2 class="post-title">
       <a href="/2017/09/01/Bootstrap-Grid-System.html">
         Bootstrap Grid System
       </a>
@@ -273,7 +372,7 @@
 
 <ul>
   <li>
-    <p><strong>col-sm-12</strong>: on an extra small screen device (phone) the column width will be equal to the row width, i.e. all boxes will be below one another in a single column.
+    <p><strong>col-xs-12</strong>: on an extra small screen device (phone) the column width will be equal to the row width, i.e. all boxes will be below one another in a single column.
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274678701_Screenshot+2017-09-01+11.03.50.png" alt="" /></p>
   </li>
   <li>
