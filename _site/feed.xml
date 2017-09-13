@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-04T21:45:35-03:00</updated><id>http://localhost:4000/</id><title type="html">Miguel Tavares</title><subtitle>developer journal</subtitle><author><name>Miguel Tavares</name></author><entry><title type="html">Flexbox</title><link href="http://localhost:4000/2017/09/04/Flexbox.html" rel="alternate" type="text/html" title="Flexbox" /><published>2017-09-04T00:00:00-03:00</published><updated>2017-09-04T00:00:00-03:00</updated><id>http://localhost:4000/2017/09/04/Flexbox</id><content type="html" xml:base="http://localhost:4000/2017/09/04/Flexbox.html">&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes&quot;&gt;Flexbox&lt;/a&gt; is a great way to make a site responsive. The size, spacing and positioning of the boxes can be adjusted according to the screen size.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-13T09:32:37-03:00</updated><id>http://localhost:4000/</id><title type="html">Miguel Tavares</title><subtitle>developer journal</subtitle><author><name>Miguel Tavares</name></author><entry><title type="html">Babel Transpilation</title><link href="http://localhost:4000/2017/09/04/Babel-Transpilation.html" rel="alternate" type="text/html" title="Babel Transpilation" /><published>2017-09-04T00:00:00-03:00</published><updated>2017-09-04T00:00:00-03:00</updated><id>http://localhost:4000/2017/09/04/Babel-Transpilation</id><content type="html" xml:base="http://localhost:4000/2017/09/04/Babel-Transpilation.html">&lt;p&gt;Follow these steps to transpile ES6+ JavaScript code to ES5 in order to improve browser compatibility.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;npm init&lt;/code&gt; to create a &lt;strong&gt;package.json&lt;/strong&gt; file in the root directory and give it a name and description.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install the Babel command line npm package and add it to the &lt;code class=&quot;highlighter-rouge&quot;&gt;devDependencies&lt;/code&gt; property:
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install babel-cli -D&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install the Babel preset environment npm package:
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install babel-preset-env -D&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add a .babelrc file to the project folder:
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;touch .babelrc&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In &lt;strong&gt;.babelrc&lt;/strong&gt;, preset your local project’s config to &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;env&quot;&lt;/code&gt;.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;presets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;env&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In &lt;strong&gt;package.json&lt;/strong&gt;, add the script &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;build&quot;: &quot;babel src -d lib&quot;&lt;/code&gt;.
+  Don’t forget to add a comma after the “test” script.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;npm run build&lt;/code&gt; to transpile the code in &lt;strong&gt;src&lt;/strong&gt; and write it to &lt;strong&gt;lib&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To check browser compatibility use &lt;a href=&quot;http://caniuse.com/&quot;&gt;caniuse.com&lt;/a&gt;&lt;/p&gt;</content><author><name>Miguel Tavares</name></author><category term="javascript" /><category term="babel" /><summary type="html">Follow these steps to transpile ES6+ JavaScript code to ES5 in order to improve browser compatibility. Use npm init to create a package.json file in the root directory and give it a name and description. Install the Babel command line npm package and add it to the devDependencies property: npm install babel-cli -D Install the Babel preset environment npm package: npm install babel-preset-env -D Add a .babelrc file to the project folder: touch .babelrc In .babelrc, preset your local project’s config to &quot;env&quot;. { &quot;presets&quot;: [&quot;env&quot;] } In package.json, add the script &quot;build&quot;: &quot;babel src -d lib&quot;. Don’t forget to add a comma after the “test” script. Use npm run build to transpile the code in src and write it to lib. To check browser compatibility use caniuse.com</summary></entry><entry><title type="html">Flexbox</title><link href="http://localhost:4000/2017/09/04/Flexbox.html" rel="alternate" type="text/html" title="Flexbox" /><published>2017-09-04T00:00:00-03:00</published><updated>2017-09-04T00:00:00-03:00</updated><id>http://localhost:4000/2017/09/04/Flexbox</id><content type="html" xml:base="http://localhost:4000/2017/09/04/Flexbox.html">&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes&quot;&gt;Flexbox&lt;/a&gt; is a great way to make a site responsive. The size, spacing and positioning of the boxes can be adjusted according to the screen size.&lt;/p&gt;
 
 &lt;p&gt;This is &lt;a href=&quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot;&gt;tutorial&lt;/a&gt; by CSS-Tricks gives a good overview of how to implement this CSS class and its attributes.&lt;/p&gt;
 

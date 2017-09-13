@@ -11,7 +11,7 @@
 
   <title>
     
-      Bootstrap Grid System &middot; Miguel Tavares
+      Miguel Tavares &middot; developer journal
     
   </title>
 
@@ -35,11 +35,11 @@
 </head>
 
 
-  <body class="post">
+  <body class="index">
 
     <div id="sidebar">
   <header>
-    <div class="site-title">
+    <h1 class="site-title">
       <a href="/">
         
           <span class="back-arrow icon"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@
         
         Miguel Tavares
       </a>
-    </div>
+    </h1>
     <p class="lead">developer journal</p>
   </header>
   <nav id="sidebar-nav-links">
@@ -219,196 +219,75 @@
 </div>
 
     <main class="container">
-      <header>
-  <h1 class="post-title">Bootstrap Grid System</h1>
-</header>
-<div class="content">
-  <div class="post-meta">
-  <span class="post-date">01 Sep 2017</span>
+      <div class="content">
+  
+<div class="pagination">
+  <a class="pagination-item newer"
+     href="/">
+    Newer
+  </a>
+</div>
+
+
+  
+
+  
+  <article class="post-body">
+    <h2 class="post-title">
+      <a href="/2017/08/25/Document.html">
+        Document
+      </a>
+    </h2>
+    <div class="post-meta">
+  <span class="post-date">25 Aug 2017</span>
   <span class="post-categories">
     
   </span>
 </div>
 
-  <div class="post-body">
-    <p>Make a site responsive using the Bootstrap <a href="https://getbootstrap.com/docs/3.3/css/#grid">grid system</a>:</p>
+    
+      <p>In the following posts I will <a href="https://www.youtube.com/watch?v=RVKofRN1dyI">document</a> my journey towards becoming a developer. The main objective is to be able to reference my learning trajectory and get an overview of where I am and how I got there.</p>
 
-<ol>
-  <li>
-    <p>Make a <strong>container</strong>: <code class="highlighter-rouge">&lt;div class="container"&gt;&lt;/div&gt;</code>.</p>
-  </li>
-  <li>
-    <p>Add a <strong>row</strong>: <code class="highlighter-rouge">&lt;div class="row"&gt;&lt;/div&gt;</code>.</p>
-  </li>
-  <li>
-    <p>Define the column space for each box. There are <strong>12 columns</strong> in each row.</p>
-  </li>
-</ol>
+<p>So let me start at the beginning.</p>
 
-<p>This means you can make a row with 4 boxes like this:</p>
+<h2 id="when-did-i-get-the-idea-to-become-a-developer">When did I get the idea to become a developer?</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="container"&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
-            &lt;div class="card"&gt;
-                &lt;h3&gt;Box 1&lt;/h3&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
-            &lt;div class="card"&gt;
-                &lt;h3&gt;Box 2&lt;/h3&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
-            &lt;div class="card"&gt;
-                &lt;h3&gt;Box 3&lt;/h3&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
-            &lt;div class="card"&gt;
-                &lt;h3&gt;Box 4&lt;/h3&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-</div>
+<p>Although I am working as a support agent for a <a href="http://appmachine.com">software company</a>, I did not aspire to become a developer. I enjoyed technology, but always fancied myself more of a consumer than a creator. Developers were like these mythical creatures, able to solve impossibly abstract problems. Joining their ranks did not seem like a real option to me.</p>
 
-<p>The classes to set the column width are:</p>
+<p>This changed when I read an <a href="https://sivers.org/prog">article</a> by Derek Sivers. In a world ruled by technology, he said, you should at least know the basics of how that technology works. TL;DR everyone should learn programming!</p>
+
+<p>These are the main sites that I have used so far to learn how to code:</p>
 
 <ul>
-  <li>
-    <p><strong>col-xs-12</strong>: on an extra small screen device (phone) the column width will be equal to the row width, i.e. all boxes will be below one another in a single column.
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274678701_Screenshot+2017-09-01+11.03.50.png" alt="" /></p>
-  </li>
-  <li>
-    <p><strong>col-sm-6</strong>: on a small device (tablet) the column width will be 6, so there are 2 columns with 2 boxes each.
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274703571_Screenshot+2017-09-01+11.04.02.png" alt="" /></p>
-  </li>
-  <li>
-    <p><strong>col-md-3</strong>: on a medium device (laptop or desktop) the width will be 3, showing the boxes on a single row.
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274718642_Screenshot+2017-09-01+11.04.10.png" alt="" /></p>
-  </li>
+  <li><a href="https://www.freecodecamp.org/">FreeCodeCamp</a>: very easy to get started and I liked that from the beginning you learn by solving little code challenges. The difficulty level does ramp up significantly though. In particular the projects you have to do by yourself can be hard, because you go from a guided learning process to suddenly having to build something on your own from scratch.</li>
+  <li><a href="https://www.codecademy.com/">Codecademy</a>: best online courses I found so far. Really nice layout and well thought out learning process. I did buy the Pro version to get access to the quizzes and projects. They are currently updating the courses, so some older courses are a bit outdated. This is where I first learned Ruby.</li>
+  <li><a href="https://udacity.com">Udacity</a>: not quite as good as Codecademy, but good to reference for specific doubts I had about HTML, CSS and JavaScript.</li>
+  <li><a href="https://www.theodinproject.com/">The Odin Project</a>: currently I am going through this open source curriculum. Nice thing about this course is that you’re not coding in a closed environment and are forced to learn development tools from the beginning, like the command line and Git. They also reference a lot of great online resources on each subject that I’m bookmarking for later use.</li>
 </ul>
 
-<p>You can test this here: <a href="https://codepen.io/buzzmeekz/full/mMvqey/">https://codepen.io/buzzmeekz/full/mMvqey/</a></p>
+<h2 id="whats-next">What’s next?</h2>
+
+<p>The online courses really helped me make up my mind that this the path I want to pursue and gave me basic knowledge of the full development stack. Still I wanted something that would help accelerate my learning. So after doing some research I decided…</p>
+
+<p>…to join the <a href="https://www.lewagon.com">Le Wagon</a> developer bootcamp!</p>
+
+<p>I will be starting at the end of September in the Lisbon batch. Really excited :)</p>
 
 
     
 
+    
+      
+      
+      
 
-
-<div class="post-tags">
+      
+    
+  </article>
   
-    
-    <a href="/tags.html#bootstrap">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">bootstrap</span>
-    </a>
-  
-    
-    <a href="/tags.html#html">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">html</span>
-    </a>
-  
-    
-    <a href="/tags.html#css">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">css</span>
-    </a>
+
   
 </div>
-  </div>
-
-  
-  <section class="comments">
-    <h2>Comments</h2>
-    
-  <div id="disqus_thread">
-    <button class="disqus-load" onClick="loadDisqusComments()">
-      Load Comments
-    </button>
-  </div>
-  <script>
-
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW
-  *  TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:s
-  *  https://disqus.com/admin/universalcode/#configuration-variables
-  */
-  var disqus_config = function () {
-    this.page.url = "http://localhost:4000/2017/09/01/Bootstrap-Grid-System.html";
-    this.page.identifier = "" ||
-                           "http://localhost:4000/2017/09/01/Bootstrap-Grid-System.html";
-  }
-  function loadDisqusComments() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://migueltavares.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  </script>
-  <noscript>
-    Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus</a>.
-  </noscript>
-
-
-  </section>
-
-  <section class="related">
-  <h2>Related Posts</h2>
-  <ul class="posts-list">
-    
-      <li>
-        <h3>
-          <a href="/2017/09/04/Babel-Transpilation.html">
-            Babel Transpilation
-            <small>04 Sep 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2017/09/04/Flexbox.html">
-            Flexbox
-            <small>04 Sep 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2017/08/31/Jekyll.html">
-            Jekyll
-            <small>31 Aug 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
-</section>
-
-</div>
-
     </main>
 
     <!-- Optional footer content -->

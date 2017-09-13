@@ -11,7 +11,7 @@
 
   <title>
     
-      Bootstrap Grid System &middot; Miguel Tavares
+      Babel Transpilation &middot; Miguel Tavares
     
   </title>
 
@@ -220,79 +220,50 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Bootstrap Grid System</h1>
+  <h1 class="post-title">Babel Transpilation</h1>
 </header>
 <div class="content">
   <div class="post-meta">
-  <span class="post-date">01 Sep 2017</span>
+  <span class="post-date">04 Sep 2017</span>
   <span class="post-categories">
     
   </span>
 </div>
 
   <div class="post-body">
-    <p>Make a site responsive using the Bootstrap <a href="https://getbootstrap.com/docs/3.3/css/#grid">grid system</a>:</p>
+    <p>Follow these steps to transpile ES6+ JavaScript code to ES5 in order to improve browser compatibility.</p>
 
 <ol>
   <li>
-    <p>Make a <strong>container</strong>: <code class="highlighter-rouge">&lt;div class="container"&gt;&lt;/div&gt;</code>.</p>
+    <p>Use <code class="highlighter-rouge">npm init</code> to create a <strong>package.json</strong> file in the root directory and give it a name and description.</p>
   </li>
   <li>
-    <p>Add a <strong>row</strong>: <code class="highlighter-rouge">&lt;div class="row"&gt;&lt;/div&gt;</code>.</p>
+    <p>Install the Babel command line npm package and add it to the <code class="highlighter-rouge">devDependencies</code> property:
+  <code class="highlighter-rouge">npm install babel-cli -D</code></p>
   </li>
   <li>
-    <p>Define the column space for each box. There are <strong>12 columns</strong> in each row.</p>
+    <p>Install the Babel preset environment npm package:
+  <code class="highlighter-rouge">npm install babel-preset-env -D</code></p>
   </li>
+  <li>
+    <p>Add a .babelrc file to the project folder:
+  <code class="highlighter-rouge">touch .babelrc</code></p>
+  </li>
+  <li>In <strong>.babelrc</strong>, preset your local project’s config to <code class="highlighter-rouge">"env"</code>.
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="w"> </span><span class="p">{</span><span class="w">
+   </span><span class="nt">"presets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"env"</span><span class="p">]</span><span class="w">
+ </span><span class="p">}</span><span class="w">
+</span></code></pre>
+    </div>
+  </li>
+  <li>
+    <p>In <strong>package.json</strong>, add the script <code class="highlighter-rouge">"build": "babel src -d lib"</code>.
+  Don’t forget to add a comma after the “test” script.</p>
+  </li>
+  <li>Use <code class="highlighter-rouge">npm run build</code> to transpile the code in <strong>src</strong> and write it to <strong>lib</strong>.</li>
 </ol>
 
-<p>This means you can make a row with 4 boxes like this:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="container"&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
-            &lt;div class="card"&gt;
-                &lt;h3&gt;Box 1&lt;/h3&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
-            &lt;div class="card"&gt;
-                &lt;h3&gt;Box 2&lt;/h3&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
-            &lt;div class="card"&gt;
-                &lt;h3&gt;Box 3&lt;/h3&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
-            &lt;div class="card"&gt;
-                &lt;h3&gt;Box 4&lt;/h3&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-</div>
-
-<p>The classes to set the column width are:</p>
-
-<ul>
-  <li>
-    <p><strong>col-xs-12</strong>: on an extra small screen device (phone) the column width will be equal to the row width, i.e. all boxes will be below one another in a single column.
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274678701_Screenshot+2017-09-01+11.03.50.png" alt="" /></p>
-  </li>
-  <li>
-    <p><strong>col-sm-6</strong>: on a small device (tablet) the column width will be 6, so there are 2 columns with 2 boxes each.
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274703571_Screenshot+2017-09-01+11.04.02.png" alt="" /></p>
-  </li>
-  <li>
-    <p><strong>col-md-3</strong>: on a medium device (laptop or desktop) the width will be 3, showing the boxes on a single row.
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_DF3E6D2DF13A1AA1C63387C5F183F8D88C261ACC49255C9841C23B8F107E7FE6_1504274718642_Screenshot+2017-09-01+11.04.10.png" alt="" /></p>
-  </li>
-</ul>
-
-<p>You can test this here: <a href="https://codepen.io/buzzmeekz/full/mMvqey/">https://codepen.io/buzzmeekz/full/mMvqey/</a></p>
-
+<p>To check browser compatibility use <a href="http://caniuse.com/">caniuse.com</a></p>
 
     
 
@@ -301,36 +272,25 @@
 <div class="post-tags">
   
     
-    <a href="/tags.html#bootstrap">
+    <a href="/tags.html#javascript">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">bootstrap</span>
+      </span>&nbsp;<span class="tag-name">javascript</span>
     </a>
   
     
-    <a href="/tags.html#html">
+    <a href="/tags.html#babel">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">html</span>
-    </a>
-  
-    
-    <a href="/tags.html#css">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">css</span>
+      </span>&nbsp;<span class="tag-name">babel</span>
     </a>
   
 </div>
@@ -354,9 +314,9 @@
   *  https://disqus.com/admin/universalcode/#configuration-variables
   */
   var disqus_config = function () {
-    this.page.url = "http://localhost:4000/2017/09/01/Bootstrap-Grid-System.html";
+    this.page.url = "http://localhost:4000/2017/09/04/Babel-Transpilation.html";
     this.page.identifier = "" ||
-                           "http://localhost:4000/2017/09/01/Bootstrap-Grid-System.html";
+                           "http://localhost:4000/2017/09/04/Babel-Transpilation.html";
   }
   function loadDisqusComments() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
@@ -379,8 +339,8 @@
     
       <li>
         <h3>
-          <a href="/2017/09/04/Babel-Transpilation.html">
-            Babel Transpilation
+          <a href="/2017/09/04/Flexbox.html">
+            Flexbox
             <small>04 Sep 2017</small>
           </a>
         </h3>
@@ -388,9 +348,9 @@
     
       <li>
         <h3>
-          <a href="/2017/09/04/Flexbox.html">
-            Flexbox
-            <small>04 Sep 2017</small>
+          <a href="/2017/09/01/Bootstrap-Grid-System.html">
+            Bootstrap Grid System
+            <small>01 Sep 2017</small>
           </a>
         </h3>
       </li>
