@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Babel Transpilation"
-date:   2017-09-04
+date:   2017-09-13
 tags:
   - javascript
   - babel
