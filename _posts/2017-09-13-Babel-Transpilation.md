@@ -33,4 +33,4 @@ Follow these steps to transpile ES6+ JavaScript code to ES5 in order to improve 
 
 7. Use `npm run build` to transpile the code in **src** and write it to **lib**.
 
-To check browser compatibility use [caniuse.com](http://caniuse.com/)
+To check browser compatibility use [caniuse.com](http://caniuse.com/).
